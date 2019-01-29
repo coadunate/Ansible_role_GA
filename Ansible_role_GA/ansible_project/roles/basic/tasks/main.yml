@@ -1,0 +1,22 @@
+- name: "Installing numpy"
+  apt: pkg=python-numpy
+
+- name: "Installing scipy"
+  apt: pkg=python-scipy
+
+- name: "Installing scikit-learn"
+  apt: pkg=python-sklearn
+
+- name: "Installing pandas"
+  apt: pkg=python-pandas
+
+- name: "Installing pyevolve"
+  apt: pkg=python-pyevolve
+
+- name: "Installing Astropy"
+  apt: pkg=python-astropy
+
+- name: "Copying code to server"
+  copy:
+    src: path/to/code/code.py
+    dest: path/to/destination/on/server/
